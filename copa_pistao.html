@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pit wall</title>
+    <link rel="stylesheet" href="copa_pistao.css">
+</head>
+<body>
+<body>
+<header class="topbar">
+
+
+    <div class="logo">
+  <a href="#" class="pit">PIT</a>
+  <a href="#" class="wall">Wall</a>
+</div>
+
+
+    <nav class="menu">
+        <a href="#Pilotos">Pilotos</a><br>
+        <a href="#classificacao">Classificação</a><br>
+        <a href="#ingressos">Ingrassos</a>
+    </nav>
+   
+    <div class="header-button">
+        <a href="#ingressos">Compra Ingressos</a>
+    </div>
+
+
+</header>
+
+    <hr>
+<section class="hero-section">
+  <!-- Lado Esquerdo: Textos e Botões -->
+  <div class="hero-content">
+    <span class="subtitulo">AUTÓDROMO DE INTERLAGOS · NOVEMBRO DE 2026</span>
+    <h1 class="titulo-gp">
+      <span class="branca">GP DE</span>
+      <span class="vermelha">SÃO PAULO</span>
+    </h1>
+    <p class="descricao">
+      71 voltas, 22 carros no grid e a torcida brasileira empurrando o Bortoleto na reta.
+    </p>
+    
+    <div class="botoes">
+      <a href="#ingressos" class="btn-garantir">GARANTIR MEU LUGAR</a>
+      <a href="#classificacao" class="btn-ver">VER CLASSIFICAÇÃO</a>
+    </div>
+  </div>
+
+  <!-- Lado Direito: Imagem via CSS com Estatísticas -->
+  <div class="hero-bg-corte">
+    <div class="stats-overlay">
+      <div class="stat">
+        <strong>71</strong>
+        <span>VOLTAS</span>
+      </div>
+      <div class="stat">
+        <strong>4.309</strong>
+        <span>KM POR VOLTA</span>
+      </div>
+      <div class="stat">
+        <strong>15</strong>
+        <span>CURVAS</span>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+<h1 id="Pilotos"><span>01</span> GRID DE PILOTOS</h1>
+
+
+<div class="grid-container">
+  
+  <!-- Ferrari - Charles Leclerc -->
+  <div class="card ferrari">
+    <span class="numero-bg">16</span>
+    <img src="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/C/CHALEC01_Charles_Leclerc/chalec01.png" class="foto-piloto" alt="Charles Leclerc">
+    <div class="info-piloto">
+      <h3>Charles <strong>LECLERC</strong></h3>
+      <p class="equipe">Ferrari</p>
+    </div>
+  </div>
+
+  <!-- McLaren - Oscar Piastri -->
+  <div class="card mclaren">
+    <span class="numero-bg">81</span>
+    <img src="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/O/OSCPIA01_Oscar_Piastri/oscpia01.png" class="foto-piloto" alt="Oscar Piastri">
+    <div class="info-piloto">
+      <h3>Oscar <strong>PIASTRI</strong></h3>
+      <p class="equipe">McLaren</p>
+    </div>
+  </div>
+
+  <!-- Mercedes - George Russell -->
+  <div class="card mercedes">
+    <span class="numero-bg">63</span>
+    <img src="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/G/GEORUS01_George_Russell/georus01.png" class="foto-piloto" alt="George Russell">
+    <div class="info-piloto">
+      <h3>George <strong>RUSSELL</strong></h3>
+      <p class="equipe">Mercedes</p>
+    </div>
+  </div>
+
+  <!-- Audi - Gabriel Bortoleto -->
+  <div class="card audi">
+    <span class="numero-bg">05</span>
+    <img src="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/G/GABBOR01_Gabriel_Bortoleto/gabbor01.png" class="foto-piloto" alt="Gabriel Bortoleto">
+    <div class="info-piloto">
+      <h3>Gabriel <strong>BORTOLETO</strong></h3>
+      <p class="equipe">Audi</p>
+    </div>
+  </div>
+<section id="Classificacao" class="secao-classificacao">
+  <!-- Topo da Seção (Título e Busca) -->
+  <div class="classificacao-header">
+    <div class="titulo-container">
+      <span class="sub-categoria">🏆 CAMPEONATO MUNDIAL DE FÓRMULA 1</span>
+      <a id="classificacao">"CLASSIFICAÇÃO</a>
+    </div>
+
+    <div class="campo-busca">
+      <label for="buscar">Buscar Pilotos</label>
+      <div class="input-wrapper">
+        <span class="icone-busca">🔍</span>
+        <input type="text" id="buscar" placeholder="nome da equipe..." onkeyup="filtrarTabela()">
+      </div>
+    </div>
+  </div>
+
+  <!-- Mensagem de Ajuda -->
+  <p class="instrucao-tabela">
+    <span class="icone-info">i</span> Clique em qualquer piloto na tabela para abrir a página detalhada com pontuação completa.
+  </p>
+
+  <!-- Container da Tabela -->
+  <div class="tabela-card">
+    <table id="tabelaClassificacao">
+      <thead>
+        <tr>
+          <th>POS.</th>
+          <th>PILOTO</th>
+          <th>EQUIPE</th>
+          <th>VITORIAS</th>
+          <th>DIFERENÇA</th>
+          <th>PONTOS</th>
+          <th class="text-right">FT.DO PILOTO</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="posicao">1</td>
+          <td class="nome-piloto">Oscar Piastri</td>
+          <td><span class="badge mclaren"><span class="bolinha"></span> MCLAREN</span></td>
+          <td class="vitorias">6</td>
+          <td class="diferenca lider">Líder</td>
+          <td class="pontos">366</td>
+          <td class="foto-coluna"><img src="assets/i.png" alt="Oscar Piastri" class="avatar-piloto"></td>
+        </tr>
+        <tr>
+          <td class="posicao">2</td>
+          <td class="nome-piloto">Charles Leclerc</td>
+          <td><span class="badge ferrari"><span class="bolinha"></span> FERRARI</span></td>
+          <td class="vitorias">5</td>
+          <td class="diferenca">-18</td>
+          <td class="pontos">348</td>
+          <td class="foto-coluna"><img src="assets/i (1).png" alt="Charles Leclerc" class="avatar-piloto"></td>
+        </tr>
+        <tr>
+          <td class="posicao">3</td>
+          <td class="nome-piloto">George Russell</td>
+          <td><span class="badge mercedes"><span class="bolinha"></span> MERCEDES</span></td>
+          <td class="vitorias">4</td>
+          <td class="diferenca">-41</td>
+          <td class="pontos">325</td>
+          <td class="foto-coluna"><img src="assets/george-russell-f1-driver-profile-picture.webp" alt="George Russell" class="avatar-piloto"></td>
+        </tr>
+        <tr>
+          <td class="posicao">4</td>
+          <td class="nome-piloto">Gabriel Bortoleto</td>
+          <td><span class="badge audi"><span class="bolinha"></span> AUDI</span></td>
+          <td class="vitorias">0</td>
+          <td class="diferenca">-298</td>
+          <td class="pontos">68</td>
+          <td class="foto-coluna"><img src="assets/i (2).png" alt="Gabriel Bortoleto" class="avatar-piloto"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+      <p>feito por Erick cardoso </p>
+</body>
+</html>

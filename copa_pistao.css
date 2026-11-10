@@ -1,0 +1,822 @@
+/* 1. Reset para remover margens e padronizar o tamanho dos elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 2. Configurações gerais da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0c0c0c;
+  color: #ffffff;
+  line-height: 1.6;
+}
+/* 3. Ajustes para imagens não estourarem a tela */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* 3. Ajustes para imagens não estourarem a tela */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* Reset padrão para colocar o menu no topo absoluto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Estrutura da barra do menu */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #0b0b10; /* Fundo escuro */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  border-bottom: 1px solid #1c1c24;
+  z-index: 1000;
+}
+
+/* Estilo geral da logo (tamanho, negrito e itálico) */
+.logo a {
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-style: italic;
+  text-decoration: none; /* Remove o sublinhado do link */
+}
+
+/* Cor vermelha apenas para o PIT */
+.logo .pit {
+  color: #ffffff;
+}
+
+/* Cor branca apenas para o Wall */
+.logo .wall {
+  color: #ff0000;
+}
+
+/* Estilo dos Links Centrais */
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu a {
+  color: #a0a0b5;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+}
+
+.menu a:hover {
+  color: #ffffff;
+}
+
+/* Estilo do Botão Vermelho à Direita */
+.header-button a {
+  background-color: #e50000;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.header-button a:hover {
+  background-color: #cc0000;
+}
+
+/* Compensação de margem no topo da página para o menu fixo não cobrir o conteúdo */
+body {
+  padding-top: 60px;
+  background-color: #0b0b10;
+  color: #ffffff;
+}
+/* Container exterior */
+.box-gp {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #0b0b10; /* Fundo escuro */
+  padding: 10px;
+  width: fit-content;
+}
+
+/* Subtítulo vermelho superior */
+.subtitulo {
+  color: #e50000;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+
+
+/* Estilo comum dos dois títulos (em itálico e a bold) */
+.card-titulo h1 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* "GP DE" em branco */
+.gp-de {
+  color: #ffffff;
+}
+
+/* "SÃO PAULO" em vermelho */
+.sao-paulo {
+  color: #e50000;
+}
+/* Container Principal da Hero */
+.hero-section {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  background-color: #0b0b10;
+  min-height: 420px;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+}
+
+/* Lado Esquerdo (Textos) */
+.hero-content {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 2;
+}
+
+.subtitulo {
+  color: #e50000;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.titulo-gp {
+  font-size: 3.5rem;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 0.95;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-gp .branca { color: #ffffff; }
+.titulo-gp .vermelha { color: #e50000; }
+
+.descricao {
+  color: #a0a0b5;
+  font-size: 0.9rem;
+  max-width: 400px;
+  line-height: 1.4;
+}
+
+.botoes {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.btn-garantir {
+  background-color: #e50000;
+  color: #ffffff;
+  padding: 12px 24px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.btn-ver {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 12px 24px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+/* --- LADO DIREITO (A Imagem colocada pelo CSS) --- */
+.hero-bg-corte {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  
+  /* Link da imagem gerada sem textos */
+  background-image: url('assets/Gemini_Generated_Image_kgyqwhkgyqwhkgyq.jpg'); 
+  background-size: cover;
+  background-position: center;
+  
+  /* Borda vermelha e corte diagonal */
+  border-left: 6px solid #e50000;
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+  z-index: 1;
+}
+
+/* Container das estatísticas com espaçamento maior */
+.stats-overlay {
+  position: absolute;
+  bottom: 25px;
+  left: 25%;
+  display: flex;
+  gap: 60px; /* Aumentado de 30px para 60px para dar mais respiro */
+  color: #ffffff;
+  z-index: 3;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stat strong {
+  font-size: 2.4rem;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.stat span {
+  font-size: 0.7rem;
+  color: #a0a0b5;
+  letter-spacing: 1.5px;
+  margin-top: 6px;
+  font-weight: bold;
+}
+/* Título Principal */
+#Pilotos {
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+#Pilotos span {
+  color: #e50000; /* Vermelho no "01" */
+  margin-right: 8px;
+  font-style: normal;
+}
+
+/* Container do Grid para alinhar em 4 colunas */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* Card genérico (fundo escuro e estrutura) */
+.card {
+  background-color: #121218;
+  padding: 25px 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+}
+
+/* Estilo do Número do Piloto */
+.card .numero {
+  font-size: 3.5rem;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+/* Nome do Piloto */
+.card h3 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.card h3 strong {
+  font-weight: 900;
+  display: block; /* Garante que o sobrenome fique na linha de baixo se necessário */
+}
+
+/* Container do Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* Base do Card */
+.card {
+  position: relative;          /* Base para o alinhamento absoluto dos elementos internos */
+  background-color: #121218;
+  border-radius: 4px;
+  height: 240px;               /* Altura fixa para todos os cartões */
+  overflow: hidden;            /* Garante que nada saia fora das bordas do card */
+}
+
+/* 1. NÚMERO (Fica no fundo - z-index: 1) */
+.card .numero-bg {
+  position: absolute;
+  top: 5px;
+  left: 130px;
+  font-size: 15rem;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1;
+  z-index: 1;
+  user-select: none;
+}
+
+/* 2. FOTO DO PILOTO (No meio - z-index: 2) */
+.card .foto-piloto {
+  position: absolute;
+  bottom: 0;
+  right: 15px;                /* Ajuste leve para alinhar o corpo do piloto */
+  width: 100%;
+  max-height: 250px;
+  object-fit: contain;
+  z-index: 2;
+}
+/* Container dos Cards: Reduz o tamanho total e alinha no canto esquerdo */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 180px); /* Define a largura menor e fixa (180px) para cada quadrado */
+  gap: 15px;
+  justify-content: start;                  /* Joga todos os quadrados para o canto esquerdo da página */
+  margin-bottom: 30px;
+}
+
+/* Quadrado (Card) do Piloto menor */
+.card {
+  position: relative;
+  background-color: #121218;
+  border-radius: 4px;
+  height: 190px;               /* Diminui a altura dos quadrados (antes era 280px) */
+  overflow: hidden;
+}
+
+/* Ajuste proporcional do Número no fundo */
+.card .numero-bg {
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  font-size: 8.5rem;          /* Diminui o número para caber no quadrado menor */
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1;
+  z-index: 1;
+  user-select: none;
+}
+
+/* Ajuste da Foto dentro do quadrado menor */
+.card .foto-piloto {
+  position: absolute;
+  bottom: 0;
+  right: -10px;
+  width: 80%;
+  max-height: 190px;
+  object-fit: contain;
+  z-index: 2;
+}
+
+/* Ajuste dos Textos no canto inferior */
+.card .info-piloto {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 3;
+}
+
+.card h3 {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.card h3 strong {
+  font-weight: 900;
+  display: block;
+  font-size: 0.95rem;
+}
+
+.card .equipe {
+  color: #8a8a9e;
+  font-size: 0.7rem;
+  margin-top: 2px;
+}
+
+/* 3. INFORMAÇÕES/NOME (Na frente de tudo - z-index: 3) */
+.card .info-piloto {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  z-index: 3;
+}
+
+.card h3 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8); /* Sombra para o texto ler bem sobre a foto */
+}
+
+.card h3 strong {
+  font-weight: 900;
+  display: block;
+  font-size: 1.25rem;
+}
+
+.card .equipe {
+  color: #8a8a9e;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+/* =========================================
+   CORES DAS EQUIPES (Borda Superior + Cor do Número)
+   ========================================= */
+
+/* Ferrari */
+.card.ferrari { border-top: 4px solid #e50000; }
+.card.ferrari .numero-bg { color: rgba(180, 0, 0, 0.4); }
+
+/* McLaren */
+.card.mclaren { border-top: 4px solid #ff8000; }
+.card.mclaren .numero-bg { color: rgba(255, 128, 0, 0.35); }
+
+/* Mercedes */
+.card.mercedes { border-top: 4px solid #00d2be; }
+.card.mercedes .numero-bg { color: rgba(0, 210, 190, 0.35); }
+
+/* Audi */
+.card.audi { border-top: 4px solid #cccccc; }
+.card.audi .numero-bg { color: rgba(200, 200, 200, 0.25); }
+
+/* Estrutura da Seção */
+.secao-classificacao {
+  background-color: #0b0d12;
+  color: #ffffff;
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Topo (Título + Busca) */
+.classificacao-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid #1c202c;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+.sub-categoria {
+  color: #e10600;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.titulo-secao {
+  font-size: 2.8rem;
+  font-style: italic;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: -1px;
+}
+
+/* Campo de Busca */
+.campo-busca {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.campo-busca label {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #d1d5db;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.icone-busca {
+  position: absolute;
+  left: 12px;
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+.input-wrapper input {
+  background-color: #12151e;
+  border: 1px solid #232736;
+  color: #ffffff;
+  padding: 8px 12px 8px 35px;
+  border-radius: 6px;
+  outline: none;
+  font-size: 0.85rem;
+  width: 220px;
+}
+
+.input-wrapper input:focus {
+  border-color: #e10600;
+}
+
+/* Mensagem abaixo do Título */
+.instrucao-tabela {
+  color: #8b92a5;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icone-info {
+  background-color: #e10600;
+  color: #fff;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+/* Tabela Estilizada */
+.tabela-card {
+  background-color: #12151e;
+  border: 1px solid #1c202c;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+thead th {
+  background-color: #0e1017;
+  color: #7b8398;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 16px 20px;
+  border-bottom: 1px solid #1c202c;
+}
+
+tbody tr {
+  border-bottom: 1px solid #181c27;
+  transition: background-color 0.2s;
+}
+
+tbody tr:hover {
+  background-color: #1a1e2b;
+  cursor: pointer;
+}
+
+tbody td {
+  padding: 18px 20px;
+  font-size: 0.9rem;
+}
+
+/* Células Específicas */
+.posicao {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.nome-piloto {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.vitorias, .diferenca {
+  color: #a4adcf;
+}
+
+.diferenca.lider {
+  color: #22c55e; /* Verde do Líder */
+  font-weight: bold;
+}
+
+.pontos {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Badges de Equipe com Bolinha */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #0b0d12;
+  border: 1px solid #232736;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.bolinha {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.mclaren .bolinha { background-color: #ff8000; }
+.ferrari .bolinha { background-color: #e8002d; }
+.mercedes .bolinha { background-color: #27f4d2; }
+.audi .bolinha { background-color: #c0c0c0; }
+
+/* Foto Redonda do Piloto */
+.foto-coluna {
+  text-align: right;
+}
+
+.avatar-piloto {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #232736;
+  background-color: #0b0d12;
+}
+/* Container Geral de Ingressos */
+.secao-ingressos {
+  background-color: #0b0d12;
+  color: #ffffff;
+  padding: 60px 20px 20px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  font-family: 'Inter', Arial, sans-serif;
+  clear: both;
+}
+
+/* Layout Lado a Lado */
+.layout-lado-a-lado {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  gap: 30px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 20px !important;
+  box-sizing: border-box !important;
+}
+
+/* Tabela na esquerda */
+.secao-classificacao {
+  flex: 1 1 58% !important;
+  width: auto !important;
+  margin: 0 !important;
+}
+
+/* Card de Ingressos na direita */
+.secao-ingressos {
+  flex: 0 0 380px !important;
+  width: 380px !important;
+  margin: 0 !important;
+}
+
+/* Formatação interna dos Ingressos */
+.ingressos-card {
+  background-color: #12151e;
+  border: 1px solid #1c202c;
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-ingressos {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-ingressos input,
+.form-ingressos select,
+.form-ingressos textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+/* Botão "Reservar ingressos" no tema F1 */
+.form-ingressos button[type="submit"],
+.btn-submit {
+  width: 100%;
+  background-color: #e10600; /* Vermelho F1 */
+  color: #ffffff;
+  border: none;
+  padding: 16px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 15px rgba(225, 6, 0, 0.4);
+}
+
+/* Efeito ao passar o rato (Hover) */
+.form-ingressos button[type="submit"]:hover,
+.btn-submit:hover {
+  background-color: #ff1801;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(225, 6, 0, 0.6);
+}
+
+/* Efeito ao clicar (Active) */
+.form-ingressos button[type="submit"]:active,
+.btn-submit:active {
+  transform: translateY(0);
+}/* Estilização dos campos do formulário (cinza bem escuro) */
+.form-ingressos input[type="text"],
+.form-ingressos input[type="email"],
+.form-ingressos input[type="date"],
+.form-ingressos input[type="number"],
+.form-ingressos select,
+.form-ingressos textarea {
+  background-color: #0b0d12 !important; /* Cinza bem escuro (fundo dark principal) */
+  color: #ffffff !important;            /* Texto em branco */
+  border: 1px solid #232736 !important;  /* Borda sutil */
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+/* Cor do texto de exemplo (placeholder) */
+.form-ingressos input::placeholder,
+.form-ingressos textarea::placeholder {
+  color: #6b7280;
+}
+
+/* Destaque em vermelho F1 ao clicar no campo */
+.form-ingressos input:focus,
+.form-ingressos select:focus,
+.form-ingressos textarea:focus {
+  border-color: #e10600 !important;
+}
